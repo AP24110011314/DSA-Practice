@@ -17,24 +17,18 @@ int main(){
         cout<<v[i]<<"  ";
     }
     cout<<endl;
-    //Searching the element of vector
-    int a;
-    cout<<"Enter the sum of the doublet : ";
-    cin>>a;
-    int indx=0;
-    for(int i=0;i<v.size(); i++){
-        for(int j=i+1;j<v.size();j++){
-            if((v[i]+v[j])==a){
-                indx =1;
-                cout<<"("<<i<<" , "<<j<<")"<<endl;
-                break;
-
-            }
-        }
+    for(int i=0;i<(v.size()/2);i++){
+        int j=v.size()-1-i;
+        v[i]=v[i]+v[j];
+        v[j]=v[i]-v[j];
+        v[i]=v[i]-v[j];
     }
-    if(indx==0){
-        cout<<"Elements to that doublet sum is not there in the vector.";
+    cout<<"The reversed array: ";
+    for(int i=0;i<v.size();i++){
+        cout<<v[i]<<"  ";
     }
+    cout<<endl;
+    
     
 
 
