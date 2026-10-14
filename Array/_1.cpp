@@ -1,9 +1,19 @@
 #include<iostream>
 using namespace std;
+void pattern(int x){
+    for(int i=1;i<=x;i++){
+        for(int j=1;j<=i;j++){
+            cout<<("*");
+        }
+        cout<<endl;
+
+    }
+
+}
 int main(){
-    int arr[]={1,2,3,4,5};
-    cout<<arr<<endl;
-    cout<<&arr<<endl;
-    cout<<&arr[1]<<endl;
-    return 0;   
+    
+
+    pattern(5);
+    return 0;
+
 }
