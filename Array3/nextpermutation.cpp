@@ -20,7 +20,7 @@ int main(){
     //6732->7236->7326->7362
     cout<<endl;
     int flag = 0;
-    int pivot;54?.,m nbvc
+    int pivot;
     vector<int> arr2=arr;   
     for(int i = x-1;i>0;i--){
 
